@@ -1,0 +1,32 @@
+{
+  "name": "RENAME_ME",
+  "version": "1.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ebeloded/RENAME_ME"
+  },
+  "author": "Evgenij (Eugene) Beloded",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc",
+    "serve": "vite preview"
+  },
+  "type": "module",
+  "main": "./dist/lib.cjs",
+  "module": "./dist/lib.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/lib.js",
+      "require": "./dist/lib.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "devDependencies": {
+    "typescript": "4.3.5",
+    "vite": "2.5.0"
+  }
+}
