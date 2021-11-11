@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 
-const name = 'RENAME_ME'
+const name = 'safe-ls'
 
 export default defineConfig({
   build: {
