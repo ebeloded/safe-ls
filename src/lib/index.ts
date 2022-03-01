@@ -1,14 +1,12 @@
-const isEnabled: boolean = (() => {
+export const isEnabled: boolean = (() => {
   try {
     if (typeof window !== 'undefined' && window.localStorage) {
       return true
     }
   } catch (err) {
-    // swallow error, warn later
+    // Local storage is not available. Changes won't persist.
   }
-  if (typeof window !== 'undefined') {
-    console.warn(`Local storage is not available. Changes won't persist.`)
-  }
+
   return false
 })()
 
