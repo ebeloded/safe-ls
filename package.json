@@ -26,7 +26,7 @@
     "./package.json": "./package.json"
   },
   "devDependencies": {
-    "typescript": "4.3.5",
-    "vite": "2.5.0"
+    "typescript": "4.6.2",
+    "vite": "2.8.5"
   }
 }
